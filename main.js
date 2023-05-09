@@ -11,7 +11,7 @@ function getComputerChoice(min, max){
 
 var playerSelection
 
-function game(compSelection, playerSelection){
+function playRound(compSelection, playerSelection){
 
     var loseAndWin = ""
     var playerWin = 0;
@@ -60,6 +60,7 @@ function game(compSelection, playerSelection){
     if(computerWin>playerWin){
         return "You Lost! Computer: " + computerWin + "n/You: " + playerWin
     } else if(playerWin>computerWin) {return "You Won! You: " + playerWin + " Computer: " + computerWin}
+    else{return "IT'S A DRAW!"}
 }
 
-console.log(game(getComputerChoice(1, 3), playerSelection))
+console.log(playRound(getComputerChoice(1, 3), playerSelection))
