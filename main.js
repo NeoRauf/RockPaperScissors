@@ -60,7 +60,7 @@ function playRound(compSelection, playerSelection){
     if(computerWin>playerWin){
         return "You Lost! Computer: " + computerWin + "n/You: " + playerWin
     } else if(playerWin>computerWin) {return "You Won! You: " + playerWin + " Computer: " + computerWin}
-    else{return "IT'S A DRAW!"}
+    else{return "It's a draw!"}
 }
 
 console.log(playRound(getComputerChoice(1, 3), playerSelection))
